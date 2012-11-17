@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/Assignment3/bin/HousePointRender.class" element2="/Assignment3/bin/HousePointRender$AnimationTask.class" element3="/Assignment3/bin/HousePointRender$SimpleMouseListener.class" element4="/Assignment3/bin/HousePointRender$SimpleRenderPanel.class" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1351691600296"/>
+</session>

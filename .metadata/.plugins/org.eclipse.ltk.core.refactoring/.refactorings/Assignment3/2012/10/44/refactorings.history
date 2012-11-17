@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Assignment3/texture/bilinearity-test Kopie.jpg&apos; to &apos;bilinearitytest.jpg&apos;" description="Rename resource &apos;bilinearity-test Kopie.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="texture/bilinearity-test Kopie.jpg" name="bilinearitytest.jpg" stamp="1351681019732" updateReferences="true"/>
+</session>

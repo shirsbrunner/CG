@@ -1,0 +1,12 @@
+1352272841268	Rename resource 'texture.jpg'
+1352281146473	Rename local variable 'tempString'
+1352284356446	Rename local variable 'lightString'
+1352291816477	Rename resource 'shirsdiffuse.frag'
+1352291825930	Rename resource 'shirsdiffuse.vert'
+1352307170259	Extract method 'loadTexture'
+1352310915450	Rename resource 'Copy of assignment42c.frag'
+1352467469727	Rename resource 'Copy of assignment41c.frag'
+1352467478915	Rename resource 'Copy of assignment41c.vert'
+1352535902169	Delete elements
+1352535915763	Rename resource 'assignment412c.frag'
+1352535925279	Rename resource 'assignment412c.vert'

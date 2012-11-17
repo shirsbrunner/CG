@@ -1,0 +1,15 @@
+1350932155924	Rename local variable 'shapeTransformation'
+1351000644953	Rename local variable 'camera'
+1351000655728	Rename local variable 'projection'
+1351017992697	Rename local variable 'multiplication'
+1351095807571	Copy compilation unit
+1351095930454	Delete element
+1351095988540	Rename method 'calculateProjection'
+1351106698783	Rename local variable 'j'
+1351106709703	Rename local variable 'k'
+1351106734975	Rename local variable 'xAxis'
+1351106751090	Rename local variable 'xCoeff'
+1351106759904	Rename local variable 'yAxis'
+1351106769451	Rename local variable 'z'
+1351255189070	Rename local variable 'singular'
+1351275773266	Rename local variable 'tempVector'

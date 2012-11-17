@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
+<fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
+<fullyQualifiedTypeName name="jrtr.VertexData.VertexElement"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="javax.vecmath.Matrix3f"/>
+<fullyQualifiedTypeName name="javax.vecmath.SingularMatrixException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.vecmath.Color3f"/>
+<fullyQualifiedTypeName name="javax.vecmath.Point3f"/>
+<fullyQualifiedTypeName name="javax.vecmath.Vector3f"/>
+<fullyQualifiedTypeName name="javax.vecmath.Point4f"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.vecmath.Vector2f"/>
+<fullyQualifiedTypeName name="jrtr.VertexData.Semantic"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="javax.vecmath.Vector4f"/>
+</qualifiedTypeNameHistroy>
