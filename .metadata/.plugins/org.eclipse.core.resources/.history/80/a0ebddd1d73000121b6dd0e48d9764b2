@@ -165,7 +165,7 @@ public class simple
 		//set glossmap
 		cubeMaterial.loadGlossmap("textures/Glossmap.jpg");
 		//set shaderlinks in material
-		cubeMaterial.loadShader("../jrtr/shaders/shPhongTex.vert","../jrtr/shaders/shPhongTex.frag");
+		cubeMaterial.loadShader("../jrtr/shaders/shToon.vert","../jrtr/shaders/shToon.frag");
 		//set shininess
 		cubeMaterial.setReflectionCoefficient(0.5f);
 		//set specularRflection
