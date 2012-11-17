@@ -8,8 +8,8 @@ public interface IBasicShape {
 	//public abstract float[] getV();
 	//public abstract float[] getC();
 	//public abstract int[] getIndices();
-	//void moveZ(float z);
-	//void moveY(float y);
-	//void moveX(float x);
+	void moveZ(float z);
+	void moveY(float y);
+	void moveX(float x);
 
 }

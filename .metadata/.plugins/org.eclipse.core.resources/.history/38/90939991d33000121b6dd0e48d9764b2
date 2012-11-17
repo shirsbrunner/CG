@@ -6,7 +6,7 @@ import javax.vecmath.Vector3f;
 import jrtr.VertexData;
 
 
-public class Landscape implements IBasicShape{
+public class Landscape {
 
 	final int DATA_SIZE;
 	float[][] landscape; //the landscape calculation base
@@ -296,8 +296,6 @@ public class Landscape implements IBasicShape{
 		
 		return vLandscape;
 	}
-
-
 	
 	
 }

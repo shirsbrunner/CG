@@ -13,12 +13,6 @@ import buildingBlocks.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
-/**
- * Drag & Drop to turn Object
- * 
- */
-
 /**
  * Implements a simple application that opens a 3D rendering window and 
  * shows a rotating cube.
