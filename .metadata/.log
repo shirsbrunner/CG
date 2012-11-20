@@ -199,3 +199,30 @@ java.lang.NullPointerException
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-11-20 20:01:18.357
+!MESSAGE An internal error occurred during: "Cache refresh".
+!STACK 0
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:634)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.addQueryResults(DiskIndex.java:197)
+	at org.eclipse.jdt.internal.core.index.Index.query(Index.java:135)
+	at org.eclipse.jdt.internal.core.search.matching.TypeDeclarationPattern.queryIn(TypeDeclarationPattern.java:310)
+	at org.eclipse.jdt.core.search.SearchPattern.findIndexMatches(SearchPattern.java:2295)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.findIndexMatches(MatchLocator.java:264)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.search(PatternSearchJob.java:96)
+	at org.eclipse.jdt.internal.core.search.PatternSearchJob.execute(PatternSearchJob.java:63)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.performConcurrentJob(JobManager.java:277)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.searchAllTypeNames(BasicSearchEngine.java:1135)
+	at org.eclipse.jdt.core.search.SearchEngine.searchAllTypeNames(SearchEngine.java:746)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog$ConsistencyRunnable.refreshSearchIndices(FilteredTypesSelectionDialog.java:669)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog$ConsistencyRunnable.run(FilteredTypesSelectionDialog.java:655)
+	at org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog.reloadCache(FilteredTypesSelectionDialog.java:696)
+	at org.eclipse.ui.dialogs.FilteredItemsSelectionDialog$RefreshCacheJob.run(FilteredItemsSelectionDialog.java:1508)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-11-20 20:01:29.748
+!MESSAGE An internal error occurred during: "Cache refresh".
+!STACK 0
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit

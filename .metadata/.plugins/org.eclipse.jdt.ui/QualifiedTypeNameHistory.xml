@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
-<fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
 <fullyQualifiedTypeName name="jrtr.VertexData.VertexElement"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -22,4 +21,6 @@
 <fullyQualifiedTypeName name="jrtr.VertexData.Semantic"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="javax.vecmath.Vector4f"/>
+<fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>

@@ -165,7 +165,7 @@ public class simple
 		//set glossmap
 		cubeMaterial.loadGlossmap("textures/Glossmap.jpg");
 		//set shaderlinks in material
-		cubeMaterial.loadShader("../jrtr/shaders/shToon.vert","../jrtr/shaders/shToon.frag");
+		cubeMaterial.loadShader("../jrtr/shaders/shPhongColor.vert","../jrtr/shaders/shPhongColor.frag");
 		//set shininess
 		cubeMaterial.setReflectionCoefficient(0.5f);
 		//set specularRflection
@@ -187,7 +187,7 @@ public class simple
 		Material teapotMaterial = new Material();
 		teapotMaterial.loadTexture("textures/tribal.jpg");
 		teapotMaterial.loadGlossmap("textures/Glossmap.jpg");
-		teapotMaterial.loadShader("../jrtr/shaders/shToon.vert","../jrtr/shaders/shToon.frag");
+		teapotMaterial.loadShader("../jrtr/shaders/shPhongColor.vert","../jrtr/shaders/shPhongColor.frag");
 		teapotMaterial.setReflectionCoefficient(0.6f);
 		teapotMaterial.setSpecularReflectionCoefficient(0.9f);
 		teapotMaterial.setPhongExponent(50);
