@@ -18,7 +18,7 @@ public class simple
 {	
 	static RenderPanel renderPanel;
 	static RenderContext renderContext;
-	static SimpleSceneManager sceneManager;
+	static GraphSceneManager sceneManager;
 	static Shape sCube, sTeapot;
 	static float angle;
 
@@ -149,7 +149,7 @@ public class simple
 		vertexData.addIndices(indices);
 				
 		// Make a scene manager and add the object
-		sceneManager = new SimpleSceneManager();
+		sceneManager = new GraphSceneManager();
 		
 		/**
 		 * used for 4.1 / 4.2 already supports textures
@@ -157,7 +157,10 @@ public class simple
 		//cube
 		
 		sCube = new Shape(vertexData);
-		sceneManager.addShape(sCube);
+		ShapeNode nCube = new ShapeNode();
+		nCube.setShape(sCube);
+		
+		//addShape(sCube);
 		//create Material
 		Material cubeMaterial = new Material();
 		//set texture in material
@@ -183,7 +186,9 @@ public class simple
 		ObjReader reader = new ObjReader();
 		VertexData vTeapot = reader.read("./Objects/teapot_tex.obj", 2f);
 		sTeapot = new Shape(vTeapot);
-		sceneManager.addShape(sTeapot);
+		ShapeNode nTeapot = new ShapeNode();
+		nTeapot.setShape(sTeapot);
+		
 		Material teapotMaterial = new Material();
 		teapotMaterial.loadTexture("textures/tribal.jpg");
 		teapotMaterial.loadGlossmap("textures/Glossmap.jpg");
@@ -209,6 +214,14 @@ public class simple
 		lightleft.setCoordinates(-5,0,0);
 		lightleft.setRadiance(50);
 		lightleft.setColor(1, 1, 0);
+		
+		//compose GraphScene, Groups and so on
+		Group worldBase = (Group) sceneManager.getRoot();
+		worldBase.addChild(nTeapot);
+		Group secondBase = new Group();
+		secondBase.addChild(nCube);
+		//worldBase.addChild(nCube);
+		worldBase.addChild(secondBase);
 		
 		
 		// Make a render panel. The init function of the renderPanel

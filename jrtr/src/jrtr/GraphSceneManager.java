@@ -15,11 +15,11 @@ public class GraphSceneManager implements SceneManagerInterface {
 	private Camera camera;
 	private Frustum frustum;
 	private LinkedList<Light> lightlist;
-	private Stack nodeStack;
+	private Stack<INode> nodeStack;
 	
 	public GraphSceneManager()
 	{
-		nodeStack = new Stack(); //create new Stack
+		nodeStack = new Stack<INode>(); //create new Stack
 		root = new Group();	//create an empty Root
 		nodeStack.push(root); //add root as base to the Stack
 		
@@ -38,22 +38,13 @@ public class GraphSceneManager implements SceneManagerInterface {
 		return frustum;
 	}
 	
-	/* shape-adding is done in the root, not here anymore, everything ist (if new Object added to root), else added to a sub-Object of Root
-	public void addShape(Shape shape)
-	{
-		//maybe rename this to add ShapeNode();
-		
-		ShapeNode newShape = new ShapeNode();
-		newShape.setShape(shape);
-		root.getChildren().add(newShape);
-		
-		//shapes.add(shape);
-	}
-	*/
-	
 	public SceneManagerIterator iterator()
 	{
 		return new GraphSceneManagerItr(this);
+	}
+	
+	public INode getRoot(){
+		return this.root;
 	}
 	
 	/**
@@ -76,52 +67,42 @@ public class GraphSceneManager implements SceneManagerInterface {
 
 	private class GraphSceneManagerItr implements SceneManagerIterator{
 
-		StackIterator itr;
-		
 		public GraphSceneManagerItr(GraphSceneManager sceneManager){
-			itr = sceneManager.nodeStack.listIterator();
+			buildStack();
 		}
 		
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
-			return false;
+			return nodeStack.size()>1; //bigger than one, since the first element is always a group
 		}
 
 		@Override
 		public RenderItem next() {
-			// TODO Auto-generated method stub
-			//take next thing from Stack, this needs to be a RenderItem, not a Shape, go figure...
-			//build said render Item out of the group-Transformation-Matrix and the Shape
-			return null;
-		}
-		
-	}
-	
-	/*
-	private class SimpleSceneManagerItr implements SceneManagerIterator {
-		
-		public SimpleSceneManagerItr(GraphSceneManager sceneManager)
-		{
-			//itr = sceneManager.shapes.listIterator(0); //TODO Think about that
-		}
-		
-		public boolean hasNext()
-		{
-			return itr.hasNext();
-		}
-		
-		public RenderItem next()
-		{
-			Shape shape = itr.next();
-			// Here the transformation in the RenderItem is simply the 
-			// transformation matrix of the shape. More sophisticated 
-			// scene managers will set the transformation for the 
-			// RenderItem differently.
+			while (nodeStack.peek() instanceof Group){ //pop unused groups as they appear
+				nodeStack.pop();
+			}
+			
+			//Shape shape = itr.next().getShape();
+			Shape shape = nodeStack.pop().getShape();
 			return new RenderItem(shape, shape.getTransformation());
 		}
-		
-		ListIterator<Shape> itr;
+
+		/**
+		 * builds the stack we will iterate over later
+		 * TODO adjust matrices
+		 */
+		private void buildStack(){
+			int i = 0;
+			while (i < nodeStack.size()){
+				if (nodeStack.elementAt(i) instanceof Group){ 
+					//if it's a Group, add children to Stack. Possible to remove Group?
+					for (INode child : nodeStack.elementAt(i).getChildren()){
+						nodeStack.push(child);
+					}
+				}
+				i++;
+			}
+			
+		}
 	}
-	*/
 }
