@@ -21,7 +21,7 @@
 <fullyQualifiedTypeName name="jrtr.VertexData.Semantic"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="javax.vecmath.Vector4f"/>
-<fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
 </qualifiedTypeNameHistroy>

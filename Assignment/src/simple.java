@@ -21,6 +21,7 @@ public class simple
 	static GraphSceneManager sceneManager;
 	static Shape sCube, sTeapot;
 	static float angle;
+	static Group worldBase, secondBase;
 
 	/**
 	 * An extension of {@link GLRenderPanel} or {@link SWRenderPanel} to 
@@ -53,6 +54,11 @@ public class simple
 	{
 		public void run()
 		{
+			
+			//the shapes are still handled... need to handle the groups as well
+			//and propagate Group-changes in GraphSceneManager to the shapes
+			
+			
 			// Update transformation
 			Matrix4f t = sCube.getTransformation();
     		Matrix4f rotX = new Matrix4f();
@@ -64,7 +70,6 @@ public class simple
     		sCube.setTransformation(t);
     		
     		Matrix4f s = sTeapot.getTransformation();
-    		
     		Matrix4f tRot = new Matrix4f();
     		tRot.rotY(angle);
     	
@@ -72,6 +77,21 @@ public class simple
     		s.mul(tRot);
     		
     		sTeapot.setTransformation(s);
+    		
+    		
+    		//create a world matrix and apply to world-group
+    		Matrix4f world = new Matrix4f();
+    		world.setIdentity();
+    		Matrix4f wrotY = new Matrix4f();
+    		wrotY.rotY(angle);
+    		world.mul(wrotY);
+    		worldBase.setTransformationMatrix(world); //not working yet, second base works like a charm
+    		
+    		//matrix for secondBase-Group: identity, no changes
+    		Matrix4f second = new Matrix4f();
+    		second.setIdentity();
+    		secondBase.setTransformationMatrix(second);
+    		
     		
     		// Trigger redrawing of the render window
     		renderPanel.getCanvas().repaint(); 
@@ -216,11 +236,12 @@ public class simple
 		lightleft.setColor(1, 1, 0);
 		
 		//compose GraphScene, Groups and so on
-		Group worldBase = (Group) sceneManager.getRoot();
+		worldBase = (Group) sceneManager.getRoot();
 		worldBase.addChild(nTeapot);
-		Group secondBase = new Group();
-		secondBase.addChild(nCube);
 		//worldBase.addChild(nCube);
+		
+		secondBase = new Group();
+		secondBase.addChild(nCube);
 		worldBase.addChild(secondBase);
 		
 		

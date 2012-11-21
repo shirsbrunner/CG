@@ -5,6 +5,8 @@ import java.util.ListIterator;
 import java.util.Iterator;
 import java.util.Stack;
 
+import javax.vecmath.Matrix4f;
+
 /**
  * A Tree scene manager that stores objects in a Tree.
  * Allows to pass parent transformations to children
@@ -21,7 +23,6 @@ public class GraphSceneManager implements SceneManagerInterface {
 	{
 		nodeStack = new Stack<INode>(); //create new Stack
 		root = new Group();	//create an empty Root
-		nodeStack.push(root); //add root as base to the Stack
 		
 		camera = new Camera();
 		frustum = new Frustum();
@@ -68,41 +69,40 @@ public class GraphSceneManager implements SceneManagerInterface {
 	private class GraphSceneManagerItr implements SceneManagerIterator{
 
 		public GraphSceneManagerItr(GraphSceneManager sceneManager){
-			buildStack();
+			nodeStack.push(root); //add root as base to the Stack
 		}
 		
 		@Override
 		public boolean hasNext() {
-			return nodeStack.size()>1; //bigger than one, since the first element is always a group
+			return nodeStack.size()>0; //bigger than 0 since we automatically pop groups, everything is a leaf
 		}
 
 		@Override
 		public RenderItem next() {
 			while (nodeStack.peek() instanceof Group){ //pop unused groups as they appear
-				nodeStack.pop();
+				Group tempMaster = (Group) nodeStack.pop(); //pop the group
+				Matrix4f parentMatrix = tempMaster.getTransformationMatrix(); //record transformation of group
+				for (INode child : tempMaster.getChildren()){
+					Matrix4f childMatrix = child.getTransformationMatrix(); //get node-transformation of child
+					childMatrix.mul(parentMatrix); //set group transformation
+					nodeStack.push(child); //push child to the stack
+				}	
 			}
 			
-			//Shape shape = itr.next().getShape();
-			Shape shape = nodeStack.pop().getShape();
-			return new RenderItem(shape, shape.getTransformation());
-		}
+			INode node = nodeStack.pop(); //this can be a light or a shape, but here it's only shapes
+			
+			Shape shape = node.getShape();
+			Matrix4f identity = new Matrix4f(); 
+			identity.setIdentity();
+			Matrix4f transformation = node.getTransformationMatrix(); //shape node transformation
+			Matrix4f shapeTransformation = shape.getTransformation(); //shape inner transformation
+			
+			identity.mul(transformation); //node-transformation
+			identity.mul(shapeTransformation); //shape-transformation
 
-		/**
-		 * builds the stack we will iterate over later
-		 * TODO adjust matrices
-		 */
-		private void buildStack(){
-			int i = 0;
-			while (i < nodeStack.size()){
-				if (nodeStack.elementAt(i) instanceof Group){ 
-					//if it's a Group, add children to Stack. Possible to remove Group?
-					for (INode child : nodeStack.elementAt(i).getChildren()){
-						nodeStack.push(child);
-					}
-				}
-				i++;
-			}
+
 			
+			return new RenderItem(shape, identity);
 		}
 	}
 }

@@ -19,8 +19,9 @@ public class Group implements INode {
 	public Group(){
 		this.children = new LinkedList<INode>();
 		this.shape = null;
-		this.tMatrix = new Matrix4f();
-		tMatrix.setIdentity();	
+		Matrix4f tempMatrix = new Matrix4f();
+		tempMatrix.setIdentity();
+		this.tMatrix = tempMatrix;	
 	}
 
 	/**

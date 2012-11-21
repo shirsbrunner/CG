@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/j3d"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jogl"/>
-	<classpathentry kind="lib" path="/jrtr/bin"/>
+	<classpathentry kind="lib" path="/jrtr/bin" sourcepath="/jrtr/src"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jrtr"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
