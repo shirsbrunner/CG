@@ -74,35 +74,49 @@ public class GraphSceneManager implements SceneManagerInterface {
 		
 		@Override
 		public boolean hasNext() {
-			return nodeStack.size()>0; //bigger than 0 since we automatically pop groups, everything is a leaf
+			return !nodeStack.isEmpty();
 		}
 
 		@Override
 		public RenderItem next() {
+			
+			/**
+			 * this builds the stack
+			 */
 			while (nodeStack.peek() instanceof Group){ //pop unused groups as they appear
-				Group tempMaster = (Group) nodeStack.pop(); //pop the group
-				Matrix4f parentMatrix = tempMaster.getTransformationMatrix(); //record transformation of group
-				for (INode child : tempMaster.getChildren()){
-					Matrix4f childMatrix = child.getTransformationMatrix(); //get node-transformation of child
-					childMatrix.mul(parentMatrix); //set group transformation
+				
+				Group parent = (Group) nodeStack.pop(); //pop the group
+				Matrix4f pTransformationM = parent.getTransformationMatrix(); //record transformation of group
+				Matrix4f pTranslationM = parent.getTranslation();
+				Matrix4f pPM = parent.getParentPosition();
+				
+				Matrix4f parentPosition = new Matrix4f();
+				parentPosition.mul(pTransformationM, pTranslationM);
+				parentPosition.mul(pPM, parentPosition);
+				
+				for (INode child : parent.getChildren()){
+					
+					child.setParentPosition(parentPosition); //this is where the parent center is
+					
 					nodeStack.push(child); //push child to the stack
+					
 				}	
 			}
 			
-			INode node = nodeStack.pop(); //this can be a light or a shape, but here it's only shapes
+			INode node = nodeStack.pop(); //now, we have only shapes
+			
+			//the node should be at parentPosition*finalTransformation
 			
 			Shape shape = node.getShape();
-			Matrix4f identity = new Matrix4f(); 
-			identity.setIdentity();
-			Matrix4f transformation = node.getTransformationMatrix(); //shape node transformation
-			Matrix4f shapeTransformation = shape.getTransformation(); //shape inner transformation
+			Matrix4f nodeTransformation = new Matrix4f();
+			Matrix4f finalTransformation = new Matrix4f();
 			
-			identity.mul(transformation); //node-transformation
-			identity.mul(shapeTransformation); //shape-transformation
-
-
+			finalTransformation.setIdentity();
+			finalTransformation.mul(node.getParentPosition());
+			//finalTransformation.mul(shape.getTransformation()); 
+			finalTransformation.mul(node.getTransformationMatrix());
 			
-			return new RenderItem(shape, identity);
+			return new RenderItem(shape, finalTransformation);
 		}
 	}
 }

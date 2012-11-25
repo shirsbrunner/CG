@@ -1,5 +1,7 @@
 package buildingBlocks;
 
+import javax.vecmath.*;
+
 import jrtr.VertexData;
 
 /**
@@ -13,6 +15,7 @@ public class Cylinder implements IBasicShape {
 
 	private float[] v; //vertex positions, every vertex has 3 records
 	private float[] c; //vertex colors, same length as v[]
+	private float[] n; //vertex normals
 	private int[] indices; //every polygon has 3, connects elements of v[]
 	private int countOfVertices;
 	private int numberOfSegments;
@@ -33,6 +36,7 @@ public class Cylinder implements IBasicShape {
 		countOfVertices = numberOfSegments*2+2; //two circles, the center dots  
 		v = calcVertices(numberOfSegments, height, upperRadius, lowerRadius);
 		c = calcColors();
+		n = calcNormals(); //TODO
 		indices = combineVertices();			
 	}
 
@@ -56,7 +60,8 @@ public class Cylinder implements IBasicShape {
 			tempindices[vCounter+1] = i + numberOfSegments; 
 			if (i+1 == numberOfSegments){tempindices[vCounter+2] = 0;}
 			else{tempindices[vCounter+2] = i + 1; //vertex on the right of originating vertex 
-			}
+			}		
+			
 			vCounter += 3;
 		}
 		
@@ -113,7 +118,7 @@ public class Cylinder implements IBasicShape {
 		}
 		return tempC;
 	}
-
+	
 
 	/**
 	 * Calculate Vertices
@@ -160,6 +165,35 @@ public class Cylinder implements IBasicShape {
 		return tempV;
 	}
 	
+	private float[] calcNormals(){
+		float[] normals = new float[v.length]; //identical length as the vertex-thing
+		Vector3f[] vNormals = new Vector3f[v.length/3];
+		Vector3f[] dots = new Vector3f[v.length/3];
+		
+		for (int i = 0; i<v.length; i+=3){
+			dots[i/3] = new Vector3f(v[i], v[i+1], v[i+2]);
+		}
+		
+
+		for (int i = 0; i<vNormals.length-2; i++){
+			vNormals[i] = new Vector3f(dots[i].x,0,dots[i].z);
+			vNormals[i].normalize();
+		}
+		int length = vNormals.length;
+		
+		vNormals[length-2] = new Vector3f(0,1,0);
+		vNormals[length-1] = new Vector3f(0,-1,0);
+		
+		for (int i = 0; i<normals.length; i+=3){
+			normals[i] = vNormals[i/3].x;
+			normals[i+1] = vNormals[i/3].y;
+			normals[i+2] = vNormals[i/3].z;
+			
+			
+		}
+		
+		return normals;
+	}
 	
 	
 	@Override
@@ -169,6 +203,7 @@ public class Cylinder implements IBasicShape {
 		VertexData vertexData = new VertexData(vertexOutput); //TODO is this right?
 		vertexData.addElement(c, VertexData.Semantic.COLOR, 3);
 		vertexData.addElement(v, VertexData.Semantic.POSITION, 3);
+		vertexData.addElement(n, VertexData.Semantic.NORMAL, 3);
 
 		vertexData.addIndices(indices);
 		return vertexData;
