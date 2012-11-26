@@ -41,7 +41,7 @@ public class ShapeNode extends Leaf {
 	 */
 	@Override
 	public Matrix4f getTransformationMatrix() {
-		return transformationMatrix;
+		return this.transformationMatrix;
 	}
 
 	@Override

@@ -37,6 +37,7 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
@@ -45,13 +46,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/Group.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2248" selectionTopPixel="1065"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShapeNode.java" partName="ShapeNode.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/ShapeNode.java" title="ShapeNode.java" tooltip="jrtr/src/jrtr/ShapeNode.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShapeNode.java" partName="ShapeNode.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/ShapeNode.java" title="ShapeNode.java" tooltip="jrtr/src/jrtr/ShapeNode.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/ShapeNode.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="455" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" partName="Bot.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bot.java" title="Bot.java" tooltip="Assignment/src/Bot.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" partName="Bot.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bot.java" title="Bot.java" tooltip="Assignment/src/Bot.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/Bot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3840" selectionTopPixel="2263"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6882" selectionTopPixel="3197"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="INode.java" partName="INode.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/INode.java" title="INode.java" tooltip="jrtr/src/jrtr/INode.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/INode.java"/>
@@ -63,7 +64,11 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphSceneManager.java" partName="GraphSceneManager.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/GraphSceneManager.java" title="GraphSceneManager.java" tooltip="jrtr/src/jrtr/GraphSceneManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2944" selectionTopPixel="1371"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2886" selectionTopPixel="1388"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cylinder.java" partName="Cylinder.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/buildingBlocks/Cylinder.java" title="Cylinder.java" tooltip="Assignment/src/buildingBlocks/Cylinder.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/buildingBlocks/Cylinder.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6682" selectionTopPixel="3213"/>
 </editor>
 </editors>
 <views>
@@ -72,7 +77,9 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
@@ -138,7 +145,7 @@
 </view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -226,7 +233,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="left" ratio="0.25" ratioLeft="318" ratioRight="954" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dd546">
+<info folder="true" part="left" ratio="0.08353034" ratioLeft="106" ratioRight="1163" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dd546">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
@@ -271,7 +278,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@91e254" ratio="0.720121" ratioLeft="476" ratioRight="185" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@91e254" ratio="0.591528" ratioLeft="391" ratioRight="270" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
@@ -371,163 +378,160 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/ShapeNode.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/ShapeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Group.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/buildingBlocks/Cylinder.java"/>
 </editors>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1612" y="0"/>
+<item historyLabel="Bot.java" index="0">
+<position info="not_deleted" x="8014" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="4589" y="0"/>
+<item historyLabel="GraphSceneManager.class" index="1">
+<position/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="4615" y="0"/>
+<item historyLabel="Bot.java" index="0">
+<position info="not_deleted" x="4035" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6176" y="0"/>
+<item historyLabel="GraphSceneManager.java" index="2">
+<position info="not_deleted" x="2886" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GLRenderContext.class" index="3">
-<position info="not_deleted" x="9679" y="64"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="5944" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2939" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6703" y="0"/>
 </item>
-<item historyLabel="GLRenderContext.class" index="3">
-<position info="not_deleted" x="9679" y="64"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="5970" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2939" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6000" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6001" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="5691" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6054" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="4805" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6090" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="673" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6072" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2939" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6305" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="673" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6343" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="5655" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6105" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6079" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6137" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6111" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6194" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="5655" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6233" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2939" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6231" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="3282" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6214" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="3059" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6222" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1543" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6230" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="3119" y="0"/>
+<item historyLabel="Bot.java" index="0">
+<position info="not_deleted" x="4035" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1479" y="0"/>
+<item historyLabel="GraphSceneManager.class" index="1">
+<position info="not_deleted" x="1831" y="0"/>
 </item>
-<item historyLabel="ShapeNode.java" index="2">
-<position info="not_deleted" x="455" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6230" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="3003" y="0"/>
+<item historyLabel="GraphSceneManager.class" index="1">
+<position info="not_deleted" x="1831" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1543" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6230" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2944" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="373" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1543" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="1350" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="0">
-<position info="not_deleted" x="2944" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="1359" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1543" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6246" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="3003" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6233" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6246" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="3003" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6328" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6340" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="3003" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6360" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6437" y="0"/>
 </item>
-<item historyLabel="ShapeNode.java" index="5">
-<position info="not_deleted" x="455" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6459" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="1207" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6482" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6409" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6507" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="3000" y="59"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="7068" y="0"/>
 </item>
-<item historyLabel="ShapeNode.java" index="5">
-<position info="not_deleted" x="455" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="7098" y="1"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6409" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="7101" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="2946" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6676" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="6409" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6569" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="1">
-<position info="not_deleted" x="3840" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6660" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.java" index="4">
-<position info="not_deleted" x="2946" y="0"/>
+<item historyLabel="Bot.java" index="0">
+<position info="not_deleted" x="4035" y="0"/>
 </item>
-<item historyLabel="Group.java" index="6">
-<position info="not_deleted" x="2248" y="0"/>
+<item historyLabel="Cylinder.java" index="3">
+<position info="not_deleted" x="6682" y="0"/>
 </item>
-<item active="true" historyLabel="ShapeNode.java" index="5">
-<position info="not_deleted" x="455" y="0"/>
+<item active="true" historyLabel="Bot.java" index="0">
+<position info="not_deleted" x="4035" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -555,14 +559,17 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GraphSceneManager.class" tooltip="jrtr.GraphSceneManager">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cylinder.java" tooltip="Assignment/src/buildingBlocks/Cylinder.java">
+<persistable path="/Assignment/src/buildingBlocks/Cylinder.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GLRenderContext.class" tooltip="jrtr.GLRenderContext">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphSceneManager.java" tooltip="jrtr/src/jrtr/GraphSceneManager.java">
 <persistable path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GraphSceneManager.class" tooltip="jrtr.GraphSceneManager">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Group.class" tooltip="jrtr.Group">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(Group.class"/>
@@ -584,9 +591,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Landscape.java" tooltip="Assignment/src/buildingBlocks/Landscape.java">
 <persistable path="/Assignment/src/buildingBlocks/Landscape.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cylinder.java" tooltip="Assignment/src/buildingBlocks/Cylinder.java">
-<persistable path="/Assignment/src/buildingBlocks/Cylinder.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" tooltip="Assignment/src/Bot.java">
 <persistable path="/Assignment/src/Bot.java"/>

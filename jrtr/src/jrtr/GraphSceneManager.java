@@ -108,12 +108,11 @@ public class GraphSceneManager implements SceneManagerInterface {
 			//the node should be at parentPosition*finalTransformation
 			
 			Shape shape = node.getShape();
-			Matrix4f nodeTransformation = new Matrix4f();
 			Matrix4f finalTransformation = new Matrix4f();
 			
 			finalTransformation.setIdentity();
+
 			finalTransformation.mul(node.getParentPosition());
-			//finalTransformation.mul(shape.getTransformation()); 
 			finalTransformation.mul(node.getTransformationMatrix());
 			
 			return new RenderItem(shape, finalTransformation);

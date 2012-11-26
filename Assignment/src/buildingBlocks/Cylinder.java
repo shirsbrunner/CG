@@ -229,6 +229,15 @@ public class Cylinder implements IBasicShape {
 	public int[] getIndices() {
 		return indices;
 	}
+	
+	/**
+	 * Cylinder is standing, moving Y moves the center
+	 */
+	public void moveCenterY(float distance){
+		for (int i = 0; i < v.length; i+=3){
+			v[i+1] -= distance;
+		}
+	}
 
 
 }
