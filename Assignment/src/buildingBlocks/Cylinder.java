@@ -1,6 +1,6 @@
 package buildingBlocks;
 
-import javax.vecmath.*;
+import javax.vecmath.Vector3f;
 
 import jrtr.VertexData;
 

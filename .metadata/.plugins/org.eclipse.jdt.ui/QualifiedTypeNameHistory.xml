@@ -20,11 +20,12 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="javax.vecmath.Matrix4f"/>
-<fullyQualifiedTypeName name="javax.vecmath.Point3f"/>
 <fullyQualifiedTypeName name="buildingBlocks.Cylinder"/>
-<fullyQualifiedTypeName name="buildingBlocks.IBasicShape"/>
 <fullyQualifiedTypeName name="javax.vecmath.Vector4f"/>
 <fullyQualifiedTypeName name="javax.vecmath.Tuple3f"/>
-<fullyQualifiedTypeName name="javax.vecmath.Vector3f"/>
+<fullyQualifiedTypeName name="javax.vecmath.Point3f"/>
+<fullyQualifiedTypeName name="buildingBlocks.IBasicShape"/>
 <fullyQualifiedTypeName name="jrtr.VertexData.Semantic"/>
+<fullyQualifiedTypeName name="buildingBlocks.Torus"/>
+<fullyQualifiedTypeName name="javax.vecmath.Vector3f"/>
 </qualifiedTypeNameHistroy>

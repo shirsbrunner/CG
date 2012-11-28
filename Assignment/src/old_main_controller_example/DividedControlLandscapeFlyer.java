@@ -1,22 +1,28 @@
 package old_main_controller_example;
-import jrtr.*;
-
-import javax.swing.*;
-
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.io.IOException;
-
-import javax.vecmath.*;
-
-import buildingBlocks.*;
-
-
 import java.util.Timer;
 import java.util.TimerTask;
+
+import javax.swing.JFrame;
+import javax.vecmath.AxisAngle4f;
+import javax.vecmath.Matrix4f;
+import javax.vecmath.Vector3f;
+
+import jrtr.Camera;
+import jrtr.Frustum;
+import jrtr.GLRenderPanel;
+import jrtr.RenderContext;
+import jrtr.RenderPanel;
+import jrtr.SWRenderPanel;
+import jrtr.Shape;
+import jrtr.SimpleSceneManager;
+import jrtr.VertexData;
+import buildingBlocks.Landscape;
 
 /**
  * Implements a simple application that opens a 3D rendering window and 

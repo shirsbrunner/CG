@@ -1,5 +1,7 @@
 package buildingBlocks;
 
+import javax.vecmath.Vector3f;
+
 import jrtr.VertexData;
 
 /**
@@ -12,6 +14,7 @@ public class Torus implements IBasicShape {
 
 	private float[] v; //vertex positions, every vertex has 3 records
 	private float[] c; //vertex colors, same length as v[]
+	private float[] normals; //only for Spheres
 	private int[] indices; //every polygon has 3, connects elements of v[]
 	private int countOfVertices;
 	private int numberOfSegments;
@@ -21,6 +24,7 @@ public class Torus implements IBasicShape {
 	
 	/**
 	 * See wikipedia for Graphics: http://en.wikipedia.org/wiki/Torus
+	 * ATTENTION: The normals are only viable for Spheres
 	 * @param numberOfSegments Slices the torus consists of (3 or higher advised)
 	 * @param segmentComplexity Edges of the slices (3 or higher advised)
 	 * @param innerRingRadius Distance from the Center, to the mid of the Torus (R)
@@ -34,6 +38,7 @@ public class Torus implements IBasicShape {
 		countOfVertices = numberOfSegments*segmentComplexity;
 		v = calcVertices(numberOfSegments, segmentComplexity, innerRingRadius, torusRadius);
 		c = calcColors();
+		normals = calcNormals();
 		indices = combineVertices();
 	}
 	
@@ -145,6 +150,7 @@ public class Torus implements IBasicShape {
 		VertexData vertexData = new VertexData(vertexOutput);
 		vertexData.addElement(c, VertexData.Semantic.COLOR, 3); //color consisting of 3 elements
 		vertexData.addElement(v, VertexData.Semantic.POSITION, 3); //position consisting of 3 elements
+		vertexData.addElement(normals, VertexData.Semantic.NORMAL, 3);
 
 		vertexData.addIndices(indices);
 		return vertexData;
@@ -161,6 +167,33 @@ public class Torus implements IBasicShape {
 
 	public float[] getC() {
 		return c;
+	}
+	
+	private float[] calcNormals(){
+		float[] normals = new float[v.length]; //identical length as the vertex-thing
+		Vector3f[] vNormals = new Vector3f[v.length/3];
+		Vector3f[] dots = new Vector3f[v.length/3];
+		
+		for (int i = 0; i<v.length; i+=3){
+			dots[i/3] = new Vector3f(v[i], v[i+1], v[i+2]);
+		}
+		
+
+		for (int i = 0; i<vNormals.length; i++){
+			vNormals[i] = new Vector3f(dots[i]); //only viable for Spheres
+			vNormals[i].normalize();
+		}
+		int length = vNormals.length;
+		
+		for (int i = 0; i<normals.length; i+=3){
+			normals[i] = vNormals[i/3].x;
+			normals[i+1] = vNormals[i/3].y;
+			normals[i+2] = vNormals[i/3].z;
+			
+			
+		}
+		
+		return normals;
 	}
 
 

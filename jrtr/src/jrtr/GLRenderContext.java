@@ -320,7 +320,7 @@ public class GLRenderContext implements RenderContext {
 	 */
 	void setLights(GLShader defaultShader){
 		
-		Iterator<Light> lItr = this.sceneManager.lightIterator();
+		Iterator<Light> lItr = this.sceneManager.lightIterator(); 
         
 		int id;
 		int lightCounter = 0;
@@ -335,7 +335,7 @@ public class GLRenderContext implements RenderContext {
         	String lightColorString = "lightColorArray["+lightCounter+"]";
         	
         	id = gl.glGetUniformLocation(defaultShader.programId(), lightPositionString); //active Shader
-      		gl.glUniform4f(id, light.getX(), light.getX(), light.getZ(), 1); //w = 1 since its a point, not a vector
+      		gl.glUniform4f(id, light.getX(), light.getY(), light.getZ(), 1); //w = 1 since its a point, not a vector //haha the error was here
       		
         	id = gl.glGetUniformLocation(defaultShader.programId(), lightIntensityString); //active Shader
       		gl.glUniform1f(id, light.getRadiance());

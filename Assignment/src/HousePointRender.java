@@ -1,14 +1,23 @@
-import jrtr.*;
-import javax.swing.*;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
-
-import javax.vecmath.*;
-
-
 import java.util.Timer;
 import java.util.TimerTask;
+
+import javax.swing.JFrame;
+import javax.vecmath.AxisAngle4f;
+import javax.vecmath.Matrix4f;
+import javax.vecmath.Vector3f;
+
+import jrtr.Camera;
+import jrtr.Frustum;
+import jrtr.GLRenderPanel;
+import jrtr.RenderContext;
+import jrtr.RenderPanel;
+import jrtr.SWRenderPanel;
+import jrtr.Shape;
+import jrtr.SimpleSceneManager;
+import jrtr.VertexData;
 
 /**
  * Implements a simple application that opens a 3D rendering window and 

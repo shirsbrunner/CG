@@ -298,6 +298,12 @@ public class Landscape implements IBasicShape{
 	}
 
 
+	@Override
+	public float[] getV() {
+		return this.v;
+	}
+
+
 	
 	
 }

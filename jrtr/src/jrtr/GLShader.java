@@ -52,7 +52,7 @@ public class GLShader implements Shader {
 		gl.glGetProgramiv(shaderObject, GL3.GL_INFO_LOG_LENGTH, ib);
 		int logLenght = ib.get(0);
 		if(logLenght <= 2)
-			return "No linker output.";
+			return  "No linker output.";
 		
 		ib.rewind();
 		ByteBuffer log = ByteBuffer.allocateDirect(logLenght);
@@ -92,12 +92,12 @@ public class GLShader implements Shader {
 		gl.glShaderSource(v, 1, vsrc, (int[])null, 0);
 		gl.glCompileShader(v);
 
-		System.out.println("Vertex shader output:\n" + this.getCompilerOutputShader(v));
+		//System.out.println("Vertex shader output:\n" + this.getCompilerOutputShader(v));//TODO
 		
 		gl.glShaderSource(f, 1, fsrc, (int[])null, 0);
 		gl.glCompileShader(f);
 
-		System.out.println("Fragment shader output:\n" + this.getCompilerOutputShader(f));
+		//System.out.println("Fragment shader output:\n" + this.getCompilerOutputShader(f)); //TODO
 		
 		p = gl.glCreateProgram();
 		gl.glAttachShader(p, v);
@@ -105,7 +105,7 @@ public class GLShader implements Shader {
 		gl.glLinkProgram(p);
 		//gl.glValidateProgram(p); //returns error when no texture stage bound
 		
-		System.out.println("Linker output:\n" + this.getLinkerOutput(p));
+		//System.out.println("Linker output:\n" + this.getLinkerOutput(p));//TODO
 		
 		int[] status = new int[1];
 		gl.glGetShaderiv(v, GL3.GL_COMPILE_STATUS, status, 0);

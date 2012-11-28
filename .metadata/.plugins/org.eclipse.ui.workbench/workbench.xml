@@ -31,32 +31,21 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="2"/>
 <part id="0"/>
 <part id="1"/>
-<part id="3"/>
+<part id="2"/>
 <part id="4"/>
 <part id="5"/>
+<part id="3"/>
 <part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Group.java" partName="Group.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/Group.java" title="Group.java" tooltip="jrtr/src/jrtr/Group.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/Group.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2248" selectionTopPixel="1065"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShapeNode.java" partName="ShapeNode.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/ShapeNode.java" title="ShapeNode.java" tooltip="jrtr/src/jrtr/ShapeNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/ShapeNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="455" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" partName="Bot.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bot.java" title="Bot.java" tooltip="Assignment/src/Bot.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" partName="Bot.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bot.java" title="Bot.java" tooltip="Assignment/src/Bot.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/Bot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6882" selectionTopPixel="3197"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="INode.java" partName="INode.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/INode.java" title="INode.java" tooltip="jrtr/src/jrtr/INode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/INode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="817" selectionTopPixel="79"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8564" selectionTopPixel="4417"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="simple.java" partName="simple.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/simple.java" title="simple.java" tooltip="Assignment/src/simple.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/simple.java"/>
@@ -64,11 +53,27 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphSceneManager.java" partName="GraphSceneManager.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/GraphSceneManager.java" title="GraphSceneManager.java" tooltip="jrtr/src/jrtr/GraphSceneManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2886" selectionTopPixel="1388"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2712" selectionTopPixel="1518"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cylinder.java" partName="Cylinder.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/buildingBlocks/Cylinder.java" title="Cylinder.java" tooltip="Assignment/src/buildingBlocks/Cylinder.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/buildingBlocks/Cylinder.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6682" selectionTopPixel="3213"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Frustum.java" partName="Frustum.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/Frustum.java" title="Frustum.java" tooltip="jrtr/src/jrtr/Frustum.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/Frustum.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="34" selectionOffset="440" selectionTopPixel="119"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdjustCamera.java" partName="AdjustCamera.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/old_main_controller_example/AdjustCamera.java" title="AdjustCamera.java" tooltip="Assignment/src/old_main_controller_example/AdjustCamera.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/old_main_controller_example/AdjustCamera.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="6998" selectionTopPixel="3696"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLRenderContext.java" partName="GLRenderContext.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/GLRenderContext.java" title="GLRenderContext.java" tooltip="jrtr/src/jrtr/GLRenderContext.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/GLRenderContext.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12323" selectionTopPixel="5536"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EFrustum.java" partName="EFrustum.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/EFrustum.java" title="EFrustum.java" tooltip="jrtr/src/jrtr/EFrustum.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/EFrustum.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1558" selectionTopPixel="402"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundingSphere.java" partName="BoundingSphere.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/BoundingSphere.java" title="BoundingSphere.java" tooltip="Assignment/src/BoundingSphere.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/BoundingSphere.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="966" selectionTopPixel="312"/>
 </editor>
 </editors>
 <views>
@@ -211,7 +216,7 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@91e254" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.7424699"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.7409639"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
@@ -233,7 +238,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="left" ratio="0.08353034" ratioLeft="106" ratioRight="1163" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dd546">
+<info folder="true" part="left" ratio="0.24349882" ratioLeft="309" ratioRight="960" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dd546">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
@@ -324,9 +329,9 @@
 <perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -344,7 +349,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.91527987" ratioLeft="605" ratioRight="56" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8214826" ratioLeft="543" ratioRight="118" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -379,159 +384,171 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bot.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Frustum.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/EFrustum.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/LightNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bot.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GLRenderContext.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Frustum.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/buildingBlocks/Cylinder.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/old_main_controller_example/AdjustCamera.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/simple.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GLRenderContext.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GraphSceneManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/EFrustum.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Frustum.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/old_main_controller_example/AdjustCamera.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/BoundingSphere.java"/>
 </editors>
 <item historyLabel="Bot.java" index="0">
-<position info="not_deleted" x="8014" y="0"/>
+<position info="not_deleted" x="6497" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.class" index="1">
-<position/>
-</item>
-<item historyLabel="Bot.java" index="0">
-<position info="not_deleted" x="4035" y="0"/>
-</item>
-<item historyLabel="GraphSceneManager.java" index="2">
-<position info="not_deleted" x="2886" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
+<item historyLabel="LightNode.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="5944" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6703" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="5970" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6000" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6001" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6054" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6090" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6072" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6305" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6343" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6105" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6137" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6194" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6233" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6231" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6214" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6222" y="0"/>
-</item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6230" y="0"/>
-</item>
 <item historyLabel="Bot.java" index="0">
-<position info="not_deleted" x="4035" y="0"/>
+<position info="not_deleted" x="6497" y="0"/>
 </item>
-<item historyLabel="GraphSceneManager.class" index="1">
-<position info="not_deleted" x="1831" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="928" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6230" y="0"/>
+<item historyLabel="Frustum.java" index="1">
+<position info="not_deleted" x="827" y="476"/>
 </item>
-<item historyLabel="GraphSceneManager.class" index="1">
-<position info="not_deleted" x="1831" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="225" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6230" y="0"/>
+<item historyLabel="Frustum.java" index="1">
+<position info="not_deleted" x="440" y="34"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="373" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="225" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="1350" y="0"/>
+<item historyLabel="Frustum.java" index="1">
+<position info="not_deleted" x="440" y="34"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="1359" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="225" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6246" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="482" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6233" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="904" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6246" y="0"/>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="6497" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6328" y="0"/>
+<item historyLabel="GLRenderContext.java" index="5">
+<position info="not_deleted" x="13190" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6340" y="0"/>
+<item historyLabel="Frustum.java" index="6">
+<position info="not_deleted" x="440" y="34"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6360" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="707" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6437" y="0"/>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="2745" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6459" y="0"/>
+<item historyLabel="GLRenderContext.java" index="5">
+<position info="not_deleted" x="12323" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6482" y="0"/>
+<item historyLabel="GraphSceneManager.java" index="7">
+<position info="not_deleted" x="2712" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6507" y="0"/>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="11643" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="7068" y="0"/>
+<item historyLabel="EFrustum.java" index="2">
+<position info="not_deleted" x="707" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="7098" y="1"/>
+<item historyLabel="Frustum.java" index="6">
+<position info="not_deleted" x="440" y="34"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="7101" y="0"/>
+<item historyLabel="GLRenderContext.java" index="5">
+<position info="not_deleted" x="12323" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6676" y="0"/>
+<item historyLabel="AdjustCamera.java" index="8">
+<position info="not_deleted" x="6998" y="24"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6569" y="0"/>
+<item historyLabel="GraphSceneManager.java" index="7">
+<position info="not_deleted" x="2712" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6660" y="0"/>
+<item historyLabel="simple.java" index="9">
+<position info="not_deleted" x="143" y="0"/>
 </item>
-<item historyLabel="Bot.java" index="0">
-<position info="not_deleted" x="4035" y="0"/>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="11643" y="0"/>
 </item>
-<item historyLabel="Cylinder.java" index="3">
-<position info="not_deleted" x="6682" y="0"/>
+<item historyLabel="GLRenderContext.java" index="10">
+<position info="not_deleted" x="12323" y="0"/>
 </item>
-<item active="true" historyLabel="Bot.java" index="0">
-<position info="not_deleted" x="4035" y="0"/>
+<item historyLabel="GraphSceneManager.java" index="11">
+<position info="not_deleted" x="2712" y="0"/>
+</item>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="9361" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="949" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="264" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="265" y="0"/>
+</item>
+<item historyLabel="Frustum.java" index="13">
+<position info="not_deleted" x="440" y="34"/>
+</item>
+<item historyLabel="GLRenderContext.java" index="10">
+<position info="not_deleted" x="12323" y="0"/>
+</item>
+<item historyLabel="AdjustCamera.java" index="14">
+<position info="not_deleted" x="6998" y="24"/>
+</item>
+<item historyLabel="GraphSceneManager.java" index="11">
+<position info="not_deleted" x="2712" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="573" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="689" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="686" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="1214" y="0"/>
+</item>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="8564" y="0"/>
+</item>
+<item historyLabel="BoundingSphere.java" index="15">
+<position info="not_deleted" x="966" y="0"/>
+</item>
+<item historyLabel="Bot.java" index="4">
+<position info="not_deleted" x="8564" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position info="not_deleted" x="270" y="0"/>
+</item>
+<item historyLabel="EFrustum.java" index="12">
+<position/>
+</item>
+<item active="true" historyLabel="EFrustum.java" index="12">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -559,50 +576,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GraphSceneManager.class" tooltip="jrtr.GraphSceneManager">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundingSphere.java" tooltip="Assignment/src/BoundingSphere.java">
+<persistable path="/Assignment/src/BoundingSphere.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cylinder.java" tooltip="Assignment/src/buildingBlocks/Cylinder.java">
-<persistable path="/Assignment/src/buildingBlocks/Cylinder.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LightNode.java" tooltip="jrtr/src/jrtr/LightNode.java">
+<persistable path="/jrtr/src/jrtr/LightNode.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GLRenderContext.class" tooltip="jrtr.GLRenderContext">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphSceneManager.java" tooltip="jrtr/src/jrtr/GraphSceneManager.java">
-<persistable path="/jrtr/src/jrtr/GraphSceneManager.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Group.class" tooltip="jrtr.Group">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(Group.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="simple.java" tooltip="Assignment/src/simple.java">
-<persistable path="/Assignment/src/simple.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="INode.java" tooltip="jrtr/src/jrtr/INode.java">
-<persistable path="/jrtr/src/jrtr/INode.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Group.java" tooltip="jrtr/src/jrtr/Group.java">
+<persistable path="/jrtr/src/jrtr/Group.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Leaf.java" tooltip="jrtr/src/jrtr/Leaf.java">
 <persistable path="/jrtr/src/jrtr/Leaf.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Vector4f.class" tooltip="javax.vecmath.Vector4f">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/D:\/Dropbox\/Dropbox\/uni\/3. Semester\/Computer Grafik\/Assignments\/eclipseX\/plugins\/j3d-1_5_2-windows-i586\/lib\/ext\/vecmath.jar&lt;javax.vecmath(Vector4f.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EFrustum.java" tooltip="jrtr/src/jrtr/EFrustum.java">
+<persistable path="/jrtr/src/jrtr/EFrustum.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="shPhongColor2.frag" tooltip="jrtr/shaders/shPhongColor2.frag">
+<persistable path="/jrtr/shaders/shPhongColor2.frag"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GLRenderContext.class" tooltip="jrtr.GLRenderContext">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GraphSceneManager.class" tooltip="jrtr.GraphSceneManager">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GraphSceneManager.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLRenderContext.java" tooltip="jrtr/src/jrtr/GLRenderContext.java">
+<persistable path="/jrtr/src/jrtr/GLRenderContext.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdjustCamera.java" tooltip="Assignment/src/old_main_controller_example/AdjustCamera.java">
 <persistable path="/Assignment/src/old_main_controller_example/AdjustCamera.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Landscape.java" tooltip="Assignment/src/buildingBlocks/Landscape.java">
-<persistable path="/Assignment/src/buildingBlocks/Landscape.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Frustum.java" tooltip="jrtr/src/jrtr/Frustum.java">
+<persistable path="/jrtr/src/jrtr/Frustum.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" tooltip="Assignment/src/Bot.java">
-<persistable path="/Assignment/src/Bot.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Light.java" tooltip="jrtr/src/jrtr/Light.java">
+<persistable path="/jrtr/src/jrtr/Light.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HousePointRender.java" tooltip="Assignment/src/HousePointRender.java">
-<persistable path="/Assignment/src/HousePointRender.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLShader.java" tooltip="jrtr/src/jrtr/GLShader.java">
+<persistable path="/jrtr/src/jrtr/GLShader.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleSceneManager.java" tooltip="jrtr/src/jrtr/SimpleSceneManager.java">
-<persistable path="/jrtr/src/jrtr/SimpleSceneManager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Shader.java" tooltip="jrtr/src/jrtr/Shader.java">
+<persistable path="/jrtr/src/jrtr/Shader.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShapeNode.java" tooltip="jrtr/src/jrtr/ShapeNode.java">
-<persistable path="/jrtr/src/jrtr/ShapeNode.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderContext.java" tooltip="jrtr/src/jrtr/RenderContext.java">
+<persistable path="/jrtr/src/jrtr/RenderContext.java"/>
 </file>
 </mruList>
 </workbench>

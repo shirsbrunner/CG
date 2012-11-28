@@ -1,14 +1,25 @@
-import jrtr.*;
-
-import javax.swing.*;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.IOException;
-
-import javax.vecmath.*;
-
 import java.util.Timer;
 import java.util.TimerTask;
+
+import javax.swing.JFrame;
+import javax.vecmath.Matrix4f;
+import javax.vecmath.Vector3f;
+
+import jrtr.GLRenderPanel;
+import jrtr.GraphSceneManager;
+import jrtr.Light;
+import jrtr.Material;
+import jrtr.ObjReader;
+import jrtr.RenderContext;
+import jrtr.RenderPanel;
+import jrtr.SWRenderPanel;
+import jrtr.Shape;
+import jrtr.ShapeNode;
+import jrtr.TransformGroup;
+import jrtr.VertexData;
 
 /**
  * Implements a simple application that opens a 3D rendering window and 
@@ -21,7 +32,7 @@ public class simple
 	static GraphSceneManager sceneManager;
 	static Shape sCube, sTeapot;
 	static float angle;
-	static Group worldBase, secondBase;
+	static TransformGroup worldBase, secondBase;
 
 	/**
 	 * An extension of {@link GLRenderPanel} or {@link SWRenderPanel} to 
@@ -236,11 +247,11 @@ public class simple
 		lightleft.setColor(1, 1, 0);
 		
 		//compose GraphScene, Groups and so on
-		worldBase = (Group) sceneManager.getRoot();
+		worldBase = (TransformGroup) sceneManager.getRoot();
 		worldBase.addChild(nTeapot);
 		//worldBase.addChild(nCube);
 		
-		secondBase = new Group();
+		secondBase = new TransformGroup();
 		secondBase.addChild(nCube);
 		worldBase.addChild(secondBase);
 		

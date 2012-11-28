@@ -59,7 +59,7 @@ public class Light {
 	}
 	
 	public String toString(){
-		String a = "abc";
+		String a = "lightcoord: " + this.getX()+","+this.getY()+","+this.getZ();
 		
 		return a;
 	}

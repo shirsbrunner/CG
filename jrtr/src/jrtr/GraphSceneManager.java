@@ -15,17 +15,17 @@ public class GraphSceneManager implements SceneManagerInterface {
 
 	private INode root;
 	private Camera camera;
-	private Frustum frustum;
+	private EFrustum frustum;
 	private LinkedList<Light> lightlist;
 	private Stack<INode> nodeStack;
 	
 	public GraphSceneManager()
 	{
 		nodeStack = new Stack<INode>(); //create new Stack
-		root = new Group();	//create an empty Root
+		root = new TransformGroup();	//create an empty Root
 		
 		camera = new Camera();
-		frustum = new Frustum();
+		frustum = new EFrustum();
 		lightlist = new LinkedList<Light>();
 	}
 	
@@ -34,10 +34,12 @@ public class GraphSceneManager implements SceneManagerInterface {
 		return camera;
 	}
 	
-	public Frustum getFrustum()
+	public EFrustum getFrustum()
 	{
 		return frustum;
 	}
+	
+	
 	
 	public SceneManagerIterator iterator()
 	{
@@ -55,7 +57,7 @@ public class GraphSceneManager implements SceneManagerInterface {
 	public Iterator<Light> lightIterator(){
 		Iterator<Light> itr = lightlist.iterator();
 		return itr;
-	}
+	}	
 	
 	/**
 	 * adds a light to the light-list (sh)
@@ -68,8 +70,11 @@ public class GraphSceneManager implements SceneManagerInterface {
 
 	private class GraphSceneManagerItr implements SceneManagerIterator{
 
+		GraphSceneManager sceneManager;
+		
 		public GraphSceneManagerItr(GraphSceneManager sceneManager){
 			nodeStack.push(root); //add root as base to the Stack
+			//clear lightlist
 		}
 		
 		@Override
@@ -83,35 +88,52 @@ public class GraphSceneManager implements SceneManagerInterface {
 			/**
 			 * this builds the stack
 			 */
-			while (nodeStack.peek() instanceof Group){ //pop unused groups as they appear
-				
-				Group parent = (Group) nodeStack.pop(); //pop the group
+			
+	
+			while (nodeStack.peek() instanceof TransformGroup){ //pop unused groups as they appear
+					
+				TransformGroup parent = (TransformGroup) nodeStack.pop(); //pop the group
 				Matrix4f pTransformationM = parent.getTransformationMatrix(); //record transformation of group
 				Matrix4f pTranslationM = parent.getTranslation();
 				Matrix4f pPM = parent.getParentPosition();
-				
+					
 				Matrix4f parentPosition = new Matrix4f();
 				parentPosition.mul(pTransformationM, pTranslationM);
 				parentPosition.mul(pPM, parentPosition);
-				
-				for (INode child : parent.getChildren()){
 					
+				for (INode child : parent.getChildren()){
+						
 					child.setParentPosition(parentPosition); //this is where the parent center is
 					
-					nodeStack.push(child); //push child to the stack
-					
+					if (child instanceof LightNode){ //unpack lights
+						if (!lightlist.isEmpty()){
+							lightlist.removeFirst();} //delete the first light, as it should be the light, that is replaced (Tree doesn't change)
+						LightNode light = (LightNode) child;
+						Matrix4f finalTransformation = new Matrix4f();
+						finalTransformation.setIdentity();
+						finalTransformation.mul(light.getParentPosition());
+						finalTransformation.mul(light.getTransformationMatrix());
+						float lightx = finalTransformation.m03;
+						float lighty = finalTransformation.m13;
+						float lightz = finalTransformation.m23;
+						
+						//System.out.println("x,y,z: "+lightx+","+lighty+","+lightz);
+						
+						light.getLight().setCoordinates(lightx, lighty, lightz);
+						//System.out.println(light.getLight().toString());
+						lightlist.add(light.getLight());
+					}
+						
+					else {nodeStack.push(child);} //push child to the stack			
 				}	
 			}
-			
-			INode node = nodeStack.pop(); //now, we have only shapes
-			
+			ShapeNode node = (ShapeNode) nodeStack.pop(); //now, we have only shapes
 			//the node should be at parentPosition*finalTransformation
 			
 			Shape shape = node.getShape();
 			Matrix4f finalTransformation = new Matrix4f();
 			
 			finalTransformation.setIdentity();
-
 			finalTransformation.mul(node.getParentPosition());
 			finalTransformation.mul(node.getTransformationMatrix());
 			
