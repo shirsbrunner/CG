@@ -15,7 +15,7 @@ public class GraphSceneManager implements SceneManagerInterface {
 
 	private INode root;
 	private Camera camera;
-	private EFrustum frustum;
+	private Frustum frustum;
 	private LinkedList<Light> lightlist;
 	private Stack<INode> nodeStack;
 	
@@ -25,7 +25,7 @@ public class GraphSceneManager implements SceneManagerInterface {
 		root = new TransformGroup();	//create an empty Root
 		
 		camera = new Camera();
-		frustum = new EFrustum();
+		frustum = new Frustum();
 		lightlist = new LinkedList<Light>();
 	}
 	
@@ -34,7 +34,7 @@ public class GraphSceneManager implements SceneManagerInterface {
 		return camera;
 	}
 	
-	public EFrustum getFrustum()
+	public Frustum getFrustum()
 	{
 		return frustum;
 	}

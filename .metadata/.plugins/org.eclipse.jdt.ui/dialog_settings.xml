@@ -2,11 +2,12 @@
 <section name="Workbench">
 	<item value="false" key="delegateUpdating"/>
 	<item value="D:\Dropbox\Dropbox\uni\3. Semester\Computer Grafik\Assignments\eclipseX\plugins\j3d-1_5_2-windows-i586\lib\ext" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="D:\Dropbox\Dropbox\uni\3. Semester\Computer Grafik\Assignments\eclipseX\Assignment\src\CVS" key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="3" key="pageIndex"/>
+		<item value="1" key="pageIndex"/>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="373" key="DIALOG_WIDTH"/>

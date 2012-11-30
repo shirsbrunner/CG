@@ -3,18 +3,32 @@ package jrtr;
 import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector3f;
 
+import buildingBlocks.BoundingSphere;
 
-public class EFrustum extends Frustum {
+/**
+ * this is now a wrapper for a frustum
+ * @author Boss
+ *
+ */
+
+public class EFrustum {
 
 	private Matrix4f projectionMatrix;
 	float nearPlane, farPlane, aspectRatio, vFieldofView;
 	Vector3f[] corners;
 	Vector3f[] normals;
+	Vector3f[] p;
+	private Frustum frustum;
 	
-	public EFrustum(){
-		super();
+	public EFrustum(Frustum frustum){
+		this.frustum = frustum;
 		corners = new Vector3f[8];
-		normals = new Vector3f[8];
+		normals = new Vector3f[6];
+		p = new Vector3f[6];
+	}
+	
+	public Frustum getFrustum(){
+		return this.frustum; 
 	}
 	
 	
@@ -23,15 +37,10 @@ public class EFrustum extends Frustum {
 		this.farPlane = farPlane;
 		this.aspectRatio = aspectRatio;
 		this.vFieldofView = vFieldOfView;
-		calculateCorners();
-		calculateNormals();
+		this.calculateCorners();
+		this.calculateNormals();
 		
-		projectionMatrix = new Matrix4f();
-		projectionMatrix.setM00((float) (1/(aspectRatio*Math.tan(Math.toRadians(vFieldOfView/2)))));
-		projectionMatrix.setM11((float) (1/Math.tan(vFieldOfView)/2));
-		projectionMatrix.setM22((nearPlane+farPlane)/(nearPlane-farPlane));
-		projectionMatrix.setM32(-1);
-		projectionMatrix.setM23((2*nearPlane*farPlane)/(nearPlane-farPlane));
+		this.frustum.setFrustum(nearPlane, farPlane, aspectRatio, vFieldOfView);
 	}
 	
 	private void calculateCorners(){
@@ -79,6 +88,13 @@ public class EFrustum extends Frustum {
 		corners[7] = fdl;
 		corners[6] = fdr;
 		corners[2] = fur;
+		
+		p[0] = corners[0];
+		p[1] = corners[1];
+		p[2] = corners[2];
+		p[3] = corners[3];
+		p[4] = corners[0];
+		p[5] = corners[4];
 	}
 	
 	private void calculateNormals(){
@@ -124,7 +140,19 @@ public class EFrustum extends Frustum {
 	}
 	
 	public boolean insideTest(BoundingSphere sphere){
+		Vector3f center = sphere.getCenter();
+		float radius = sphere.getRadius();
+		boolean inside = false;
+		Vector3f distance = new Vector3f();
 		
-		return true;
+		for (int i = 0; i<6; i++){
+			Vector3f normal = normals[i];
+			distance.sub(p[i],center);
+			if (distance.dot(normal)<radius){
+				inside = true;
+			} 
+			
+		}
+		return inside;
 	}
 }

@@ -269,7 +269,7 @@ public class Bot
 		 * used for 4.1 / 4.2 already supports textures
 		 */
 		//Tube
-		int complexity = 16;
+		int complexity = 32;
 		float 	bodyDiam = 0.5f, 
 				bodyHeight = 2,
 				neckHeight = 0.5f,
@@ -309,7 +309,7 @@ public class Bot
 		nBody.setShape(sBody);
 		
 		//TODO Body Sphere
-		BoundingSphere bBody = new BoundingSphere(bodyCylinder);
+		BoundingSphere bBody = new BoundingSphere(armCylinder);
 		IBasicShape bodySphere = new Torus(complexity, complexity, 0f, bBody.getRadius(),3);
 		Shape sbodySphere = new Shape(bodySphere.getVertexData());
 		nBodySphere = new ShapeNode();

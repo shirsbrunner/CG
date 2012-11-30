@@ -9,6 +9,9 @@ import javax.media.opengl.GL3;
 import javax.media.opengl.GLAutoDrawable;
 import javax.vecmath.*;
 
+import buildingBlocks.BoundingSphere;
+import buildingBlocks.IBasicShape;
+
 /**
  * This class implements a {@link RenderContext} (a renderer) using OpenGL version 3 (or later).
  */
@@ -19,6 +22,7 @@ public class GLRenderContext implements RenderContext {
 	private GLShader activeShader;
 	private GLShader shaderOne;
 	private GLShader shaderTwo;
+	private EFrustum efrustum;
 	
 	
 	/**
@@ -45,6 +49,9 @@ public class GLRenderContext implements RenderContext {
 	public void setSceneManager(SceneManagerInterface sceneManager)
 	{
 		this.sceneManager = sceneManager;
+		EFrustum efrustum = new EFrustum(sceneManager.getFrustum());
+		efrustum.setFrustum(1, 100, 1, 120); //this does somehow not set the frustum as intended... who knows
+		
 	}
 	
 	/**
@@ -61,7 +68,12 @@ public class GLRenderContext implements RenderContext {
 		SceneManagerIterator iterator = sceneManager.iterator();	
 		while(iterator.hasNext())
 		{
+
+			
 			RenderItem r = iterator.next();
+			BoundingSphere bSphere = new BoundingSphere(r.getShape());
+			
+			//if(r.getShape()!=null && efrustum.insideTest(bSphere)) draw(r);
 			if(r.getShape()!=null) draw(r);
 		}		
 		
@@ -203,7 +215,7 @@ public class GLRenderContext implements RenderContext {
 		int id; //SH this is used and reused over the whole code to match uniforms to input. 
 		
 		//create & pass shader
-		//if (m.getCompiledShader() == null){ //the shader doesn't exist
+		if (m.getCompiledShader() == null){ //the shader doesn't exist
 			GLShader defaultShader = new GLShader(gl);
 	        try {
 	        	defaultShader.load(m.getVertexFileName(), m.getFragmentFileName());
@@ -239,14 +251,14 @@ public class GLRenderContext implements RenderContext {
 	        //create & pass Object texture
 			m.setCompiledShader(defaultShader);
 			activeShader = m.getCompiledShader();
-	//	}
-		//else{
+		}
+		else{
 			GLShader tempShader = m.getCompiledShader();
-			
+			setLights(tempShader);
 			loadTexture(m, tempShader); //TODO loads texture and glossmap, disable and everthing runs smoooother 
 			tempShader.use();
 			activeShader = tempShader;	
-	//	}
+		}
 	}
 
 	//new multitex inkl glossmap

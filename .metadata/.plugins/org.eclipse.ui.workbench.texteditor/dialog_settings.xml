@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="EFrustum" key="selection"/>
 		<list key="findhistory">
+			<item value="Efrustum"/>
+			<item value="frustum"/>
+			<item value="draw"/>
 			<item value="Frustum"/>
 			<item value="getCompilerOutput"/>
 			<item value="compiler"/>
 			<item value="iterator"/>
 			<item value="light"/>
-			<item value="worldBase"/>
-			<item value="sceneManager"/>
-			<item value="frag_texcoord"/>
 		</list>
 		<list key="replacehistory">
 			<item value="newZ"/>

@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
-<fullyQualifiedTypeName name="jrtr.VertexData.VertexElement"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ListIterator"/>
@@ -24,8 +23,12 @@
 <fullyQualifiedTypeName name="javax.vecmath.Vector4f"/>
 <fullyQualifiedTypeName name="javax.vecmath.Tuple3f"/>
 <fullyQualifiedTypeName name="javax.vecmath.Point3f"/>
-<fullyQualifiedTypeName name="buildingBlocks.IBasicShape"/>
 <fullyQualifiedTypeName name="jrtr.VertexData.Semantic"/>
 <fullyQualifiedTypeName name="buildingBlocks.Torus"/>
 <fullyQualifiedTypeName name="javax.vecmath.Vector3f"/>
+<fullyQualifiedTypeName name="buildingBlocks.IBasicShape"/>
+<fullyQualifiedTypeName name="buildingBlocks.BoundingSphere"/>
+<fullyQualifiedTypeName name="jrtr.Shape"/>
+<fullyQualifiedTypeName name="jrtr.VertexData"/>
+<fullyQualifiedTypeName name="jrtr.VertexData.VertexElement"/>
 </qualifiedTypeNameHistroy>
