@@ -21,10 +21,6 @@ in float frag_distanceArray[MAXLIGHTS];
 in vec4 frag_e; //e for phong shader
 
 in vec4 frag_cameraPosition; //the position of the camera, where do we look from
-
-
-
-
 // Output variable, will be written to framebuffer automatically
 out vec4 frag_shaded;
 

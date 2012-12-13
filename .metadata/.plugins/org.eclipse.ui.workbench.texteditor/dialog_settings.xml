@@ -12,23 +12,27 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wholeword"/>
-		<item value="EFrustum" key="selection"/>
+		<item value="true" key="wholeword"/>
+		<item value="f" key="selection"/>
 		<list key="findhistory">
-			<item value="Efrustum"/>
-			<item value="frustum"/>
-			<item value="draw"/>
-			<item value="Frustum"/>
-			<item value="getCompilerOutput"/>
-			<item value="compiler"/>
-			<item value="iterator"/>
-			<item value="light"/>
+			<item value="vLiberty"/>
+			<item value="f"/>
+			<item value="vt"/>
+			<item value="normals"/>
+			<item value="phong_exponent"/>
+			<item value="phong_ex"/>
+			<item value="phong_exp"/>
+			<item value="specular_coeff"/>
 		</list>
 		<list key="replacehistory">
+			<item value="phongExponent"/>
+			<item value="specularReflection"/>
+			<item value="reflectionCoefficient"/>
+			<item value="lightColorArray"/>
+			<item value="lightPositionArray"/>
+			<item value="lightIntensityArray"/>
+			<item value="cameraMatrix"/>
 			<item value="newZ"/>
-			<item value="newZ2"/>
-			<item value="newY"/>
-			<item value="newX"/>
 		</list>
 	</section>
 </section>

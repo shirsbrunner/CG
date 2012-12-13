@@ -352,7 +352,7 @@ public class Bot
 		nllLeg = new ShapeNode();
 		nllLeg.setShape(sllLeg);
 
-		//create Material
+		//create Material supports multiple materials now
 		Material tubeMaterial = new Material();
 		tubeMaterial.loadTexture("textures/plant.jpg");
 		tubeMaterial.loadGlossmap("textures/Glossmap.jpg");
@@ -360,7 +360,17 @@ public class Bot
 		tubeMaterial.setReflectionCoefficient(0.5f);
 		tubeMaterial.setSpecularReflectionCoefficient(0.9f);
 		tubeMaterial.setPhongExponent(5);
-		sBody.setMaterial(tubeMaterial);
+		
+		Material toonMaterial = new Material();
+		toonMaterial.loadTexture("textures/plant.jpg");
+		toonMaterial.loadGlossmap("textures/Glossmap.jpg");
+		toonMaterial.loadShader("../jrtr/shaders/shToon.vert","../jrtr/shaders/shToon.frag"); //default for all the elements shPhongColor
+		toonMaterial.setReflectionCoefficient(0.5f);
+		toonMaterial.setSpecularReflectionCoefficient(0.9f);
+		toonMaterial.setPhongExponent(5);
+		
+		
+		sBody.setMaterial(toonMaterial);
 		sHead.setMaterial(tubeMaterial);
 		srArm.setMaterial(tubeMaterial);
 		srlArm.setMaterial(tubeMaterial);

@@ -13,7 +13,6 @@ import buildingBlocks.BoundingSphere;
 
 public class EFrustum {
 
-	private Matrix4f projectionMatrix;
 	float nearPlane, farPlane, aspectRatio, vFieldofView;
 	Vector3f[] corners;
 	Vector3f[] normals;

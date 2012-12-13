@@ -46,7 +46,7 @@ void main()
 	 	//specular
 		//calculate specular-Moments: 
 		//we calculate here: (R*e)^p with e = cameraPosition-gl_FragCoord
-		vec4 R = reflect(-lightDirection, vec4(frag_normal,0));
+		vec4 R = reflect(lightDirection, vec4(frag_normal,0));
 
 		float rDotE = max(0,dot(R,frag_e));
 
@@ -62,7 +62,7 @@ void main()
 		
 		//sum it up
 		tempVec += texture(Texture0, frag_texcoord) *(ndotA);
-		tempVec += lightColorArray[i] * (ndotA);
+		//tempVec += lightColorArray[i] * (ndotA);
 		tempVec += highlightColor*ndotAspec; 	 	
 		
 	}

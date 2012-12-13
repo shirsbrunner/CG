@@ -49,8 +49,8 @@ public class GLRenderContext implements RenderContext {
 	public void setSceneManager(SceneManagerInterface sceneManager)
 	{
 		this.sceneManager = sceneManager;
-		EFrustum efrustum = new EFrustum(sceneManager.getFrustum());
-		efrustum.setFrustum(1, 100, 1, 120); //this does somehow not set the frustum as intended... who knows
+		efrustum = new EFrustum(sceneManager.getFrustum());
+		efrustum.setFrustum(1, 100, 1, 60); //this does somehow not set the frustum as intended... who knows
 		
 	}
 	
@@ -71,8 +71,8 @@ public class GLRenderContext implements RenderContext {
 
 			
 			RenderItem r = iterator.next();
-			BoundingSphere bSphere = new BoundingSphere(r.getShape());
-			
+			//BoundingSphere bSphere = new BoundingSphere(r.getShape());
+
 			//if(r.getShape()!=null && efrustum.insideTest(bSphere)) draw(r);
 			if(r.getShape()!=null) draw(r);
 		}		
