@@ -12,6 +12,7 @@ public class Material {
 	private String textureFileName, vertexFileName, fragmentFileName, glossmapFileName; //sh cannot include shader, needs a GL-Context, therefore just save reference to the files....
 	private GLShader compiledShader;
 	private float reflectionCoefficient, specularReflectionCoefficient, phongExponent;
+	private CubeMap cubeMap;
 	//needs material-Color
 	
 	public Material(){

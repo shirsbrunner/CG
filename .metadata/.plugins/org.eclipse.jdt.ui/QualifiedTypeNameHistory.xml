@@ -33,4 +33,7 @@
 <fullyQualifiedTypeName name="buildingBlocks.RotationBody"/>
 <fullyQualifiedTypeName name="jrtr.ObjReader"/>
 <fullyQualifiedTypeName name="jrtr.VertexData"/>
+<fullyQualifiedTypeName name="javax.media.opengl.GL"/>
+<fullyQualifiedTypeName name="com.jogamp.opengl.util.texture.TextureData"/>
+<fullyQualifiedTypeName name="com.jogamp.opengl.util.texture.TextureIO"/>
 </qualifiedTypeNameHistroy>

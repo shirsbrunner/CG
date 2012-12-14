@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
-<window height="770" maximized="true" width="640" x="0" y="0">
+<window height="770" maximized="true" width="640" x="552" y="2">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.debug.ui.BreakpointView"/>
 </fastViewData>
@@ -33,29 +33,39 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="1"/>
 <part id="0"/>
+<part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RotationBody.java" partName="RotationBody.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/buildingBlocks/RotationBody.java" title="RotationBody.java" tooltip="jrtr/src/buildingBlocks/RotationBody.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/buildingBlocks/RotationBody.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3879" selectionTopPixel="1989"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bezier.java" partName="Bezier.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bezier.java" title="Bezier.java" tooltip="Assignment/src/Bezier.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/Bezier.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5738" selectionTopPixel="2697"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Final.java" partName="Final.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Final.java" title="Final.java" tooltip="Assignment/src/Final.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Final.java" partName="Final.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Final.java" title="Final.java" tooltip="Assignment/src/Final.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/Final.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6019" selectionTopPixel="2761"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="6038" selectionTopPixel="2587"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" partName="Bot.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/Assignment/src/Bot.java" title="Bot.java" tooltip="Assignment/src/Bot.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment/src/Bot.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLRenderContext.java" partName="GLRenderContext.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/GLRenderContext.java" title="GLRenderContext.java" tooltip="jrtr/src/jrtr/GLRenderContext.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/GLRenderContext.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10546" selectionTopPixel="4577"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Material.java" partName="Material.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/Material.java" title="Material.java" tooltip="jrtr/src/jrtr/Material.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/Material.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="890" selectionTopPixel="208"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CubeMap.java" partName="CubeMap.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/CubeMap.java" title="CubeMap.java" tooltip="jrtr/src/jrtr/CubeMap.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/CubeMap.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1324" selectionTopPixel="459"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLTexture.java" partName="GLTexture.java" path="D:/Dropbox/Dropbox/uni/3. Semester/Computer Grafik/Assignments/eclipseX/jrtr/src/jrtr/GLTexture.java" title="GLTexture.java" tooltip="jrtr/src/jrtr/GLTexture.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jrtr/src/jrtr/GLTexture.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="87" selectionOffset="556" selectionTopPixel="265"/>
 </editor>
 </editors>
 <views>
@@ -344,172 +354,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bezier.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Final.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment/Objects/Statue-of-LibertyOBJ.obj"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/ObjReader.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Assignment/Objects/Statue-of-LibertyOBJ.obj"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(ObjReader.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bezier.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/jrtr/shaders/shPhongMTex.frag"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bezier.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Final.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(ObjReader.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/jrtr/shaders/shPhongMTex.frag"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/buildingBlocks/RotationBody.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bezier.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment/src/Bot.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/CubeMap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Material.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/SWTexture.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Texture.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GLRenderContext.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/GLTexture.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/Material.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jrtr/src/jrtr/CubeMap.java"/>
 </editors>
-<item historyLabel="Bezier.java" index="0">
-<position info="not_deleted" x="6141" y="0"/>
+<item historyLabel="Texture.java" index="3">
+<position/>
 </item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="6323" y="0"/>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1702" y="0"/>
 </item>
-<item historyLabel="Statue-of-LibertyOBJ.obj" index="2">
-<position info="not_deleted" x="126858" y="0"/>
+<item historyLabel="Texture.java" index="3">
+<position/>
 </item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="6323" y="0"/>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1702" y="0"/>
 </item>
-<item historyLabel="ObjReader.java" index="3">
+<item historyLabel="SWTexture.java" index="2">
+<position/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1702" y="0"/>
+</item>
+<item historyLabel="SWTexture.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Statue-of-LibertyOBJ.obj" index="4">
-<position info="not_deleted" x="6116726" y="0"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="ObjReader.class" index="5">
-<position/>
-</item>
-<item historyLabel="ObjReader.java" index="3">
+<item historyLabel="Texture.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ObjReader.class" index="5">
-<position/>
-</item>
-<item historyLabel="Bezier.java" index="6">
-<position info="not_deleted" x="6141" y="0"/>
-</item>
-<item historyLabel="Statue-of-LibertyOBJ.obj" index="4">
-<position info="not_deleted" x="6116726" y="0"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="Statue-of-LibertyOBJ.obj" index="4">
-<position info="not_deleted" x="6116743" y="14"/>
-</item>
-<item historyLabel="ObjReader.class" index="5">
-<position/>
-</item>
-<item historyLabel="ObjReader.java" index="3">
+<item historyLabel="SWTexture.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ObjReader.class" index="5">
-<position/>
+<item historyLabel="Material.java" index="1">
+<position info="not_deleted" x="1079" y="146"/>
 </item>
-<item historyLabel="ObjReader.java" index="3">
+<item historyLabel="GLRenderContext.java" index="4">
+<position info="not_deleted" x="10546" y="0"/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1702" y="0"/>
+</item>
+<item historyLabel="SWTexture.java" index="2">
+<position info="not_deleted" x="431" y="7"/>
+</item>
+<item historyLabel="Material.java" index="1">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="GLRenderContext.java" index="4">
+<position info="not_deleted" x="10546" y="0"/>
+</item>
+<item historyLabel="Material.java" index="1">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="SWTexture.java" index="2">
+<position info="not_deleted" x="431" y="7"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
+<item historyLabel="SWTexture.java" index="2">
+<position info="not_deleted" x="431" y="7"/>
 </item>
-<item historyLabel="ObjReader.class" index="5">
-<position info="not_deleted" x="5301" y="0"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="ObjReader.java" index="3">
-<position info="not_deleted" x="5335" y="9"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="Statue-of-LibertyOBJ.obj" index="4">
-<position info="not_deleted" x="6116743" y="14"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="shPhongMTex.frag" index="7">
-<position info="not_deleted" x="1749" y="0"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="shPhongMTex.frag" index="7">
-<position info="not_deleted" x="1749" y="0"/>
-</item>
-<item historyLabel="Final.java" index="1">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="Bezier.java" index="8">
-<position info="not_deleted" x="6141" y="0"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position/>
-</item>
-<item historyLabel="ObjReader.class" index="10">
-<position/>
-</item>
-<item historyLabel="shPhongMTex.frag" index="11">
-<position info="not_deleted" x="1749" y="0"/>
-</item>
-<item historyLabel="ObjReader.class" index="10">
-<position/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5798" y="0"/>
-</item>
-<item historyLabel="GLRenderContext.class" index="12">
-<position info="not_deleted" x="7970" y="64"/>
-</item>
-<item historyLabel="RotationBody.java" index="13">
-<position info="not_deleted" x="3879" y="0"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5811" y="0"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5815" y="0"/>
-</item>
-<item historyLabel="ObjReader.class" index="10">
-<position/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5815" y="0"/>
-</item>
-<item historyLabel="GLRenderContext.class" index="12">
-<position info="not_deleted" x="7970" y="64"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5811" y="0"/>
-</item>
-<item historyLabel="ObjReader.class" index="10">
-<position info="not_deleted" x="2665" y="0"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5811" y="0"/>
-</item>
-<item historyLabel="ObjReader.class" index="10">
-<position info="not_deleted" x="2594" y="59"/>
-</item>
-<item historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5811" y="0"/>
-</item>
-<item historyLabel="Bezier.java" index="14">
-<position info="not_deleted" x="5738" y="0"/>
-</item>
-<item historyLabel="Bot.java" index="15">
+<item historyLabel="GLTexture.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="Final.java" index="9">
-<position info="not_deleted" x="5892" y="0"/>
+<item historyLabel="GLRenderContext.java" index="4">
+<position info="not_deleted" x="10546" y="0"/>
+</item>
+<item historyLabel="Material.java" index="1">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1882" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1618" y="90"/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1740" y="16"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1618" y="90"/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="1756" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1618" y="90"/>
+</item>
+<item historyLabel="CubeMap.java" index="0">
+<position info="not_deleted" x="288" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1618" y="90"/>
+</item>
+<item historyLabel="Material.java" index="6">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1618" y="90"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position/>
+</item>
+<item historyLabel="Material.java" index="6">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position/>
+</item>
+<item historyLabel="Material.java" index="6">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="764" y="394"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="764" y="394"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position info="not_deleted" x="1648" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1304" y="493"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="1304" y="493"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="556" y="87"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position info="not_deleted" x="1446" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="556" y="87"/>
+</item>
+<item historyLabel="CubeMap.java" index="7">
+<position info="not_deleted" x="959" y="0"/>
+</item>
+<item historyLabel="GLTexture.java" index="5">
+<position info="not_deleted" x="556" y="87"/>
+</item>
+<item active="true" historyLabel="CubeMap.java" index="7">
+<position info="not_deleted" x="959" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -537,6 +539,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLTexture.java" tooltip="jrtr/src/jrtr/GLTexture.java">
+<persistable path="/jrtr/src/jrtr/GLTexture.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Texture.java" tooltip="jrtr/src/jrtr/Texture.java">
+<persistable path="/jrtr/src/jrtr/Texture.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SWTexture.java" tooltip="jrtr/src/jrtr/SWTexture.java">
+<persistable path="/jrtr/src/jrtr/SWTexture.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CubeMap.java" tooltip="jrtr/src/jrtr/CubeMap.java">
+<persistable path="/jrtr/src/jrtr/CubeMap.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Material.java" tooltip="jrtr/src/jrtr/Material.java">
+<persistable path="/jrtr/src/jrtr/Material.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bezier.java" tooltip="Assignment/src/Bezier.java">
+<persistable path="/Assignment/src/Bezier.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExampleCube.java" tooltip="jrtr/src/buildingBlocks/ExampleCube.java">
+<persistable path="/jrtr/src/buildingBlocks/ExampleCube.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cube.java" tooltip="jrtr/src/buildingBlocks/Cube.java">
+<persistable path="/jrtr/src/buildingBlocks/Cube.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GLRenderContext.java" tooltip="jrtr/src/jrtr/GLRenderContext.java">
+<persistable path="/jrtr/src/jrtr/GLRenderContext.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphSceneManager.java" tooltip="jrtr/src/jrtr/GraphSceneManager.java">
+<persistable path="/jrtr/src/jrtr/GraphSceneManager.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bot.java" tooltip="Assignment/src/Bot.java">
 <persistable path="/Assignment/src/Bot.java"/>
 </file>
@@ -551,36 +583,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="balloondog.obj" tooltip="Assignment/Objects/balloondog.obj">
 <persistable path="/Assignment/Objects/balloondog.obj"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="GLRenderContext.class" tooltip="jrtr.GLRenderContext">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment/\/jrtr\/bin&lt;jrtr(GLRenderContext.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObjReader.java" tooltip="jrtr/src/jrtr/ObjReader.java">
-<persistable path="/jrtr/src/jrtr/ObjReader.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Statue-of-LibertyOBJ.obj" tooltip="Assignment/Objects/Statue-of-LibertyOBJ.obj">
-<persistable path="/Assignment/Objects/Statue-of-LibertyOBJ.obj"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdjustCamera.java" tooltip="Assignment/src/old_main_controller_example/AdjustCamera.java">
-<persistable path="/Assignment/src/old_main_controller_example/AdjustCamera.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HousePointRender.java" tooltip="Assignment/src/HousePointRender.java">
-<persistable path="/Assignment/src/HousePointRender.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="simple.java" tooltip="Assignment/src/simple.java">
-<persistable path="/Assignment/src/simple.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Final.java" tooltip="Assignment/src/Final.java">
-<persistable path="/Assignment/src/Final.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="shPhongMTex.frag" tooltip="jrtr/shaders/shPhongMTex.frag">
-<persistable path="/jrtr/shaders/shPhongMTex.frag"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="shPhongMTex.vert" tooltip="jrtr/shaders/shPhongMTex.vert">
-<persistable path="/jrtr/shaders/shPhongMTex.vert"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="shPhongTex.frag" tooltip="jrtr/shaders/shPhongTex.frag">
-<persistable path="/jrtr/shaders/shPhongTex.frag"/>
 </file>
 </mruList>
 </workbench>
